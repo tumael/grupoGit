@@ -30,5 +30,13 @@ esPar = (numero)->
 
  res
 
+#FUNCION QUE VERIFICA SI UN NUMERO ES PRIMO
+esPrimo= (num) -> 
+  resp=true
+  resp= false for i in [2..num-1] when num%i==0
+  resp= true if num==1 
+  resp
+
 #alert numeroInvertido 1234567
 #alert numeroEspejo 12321
+#esPrimo 5
